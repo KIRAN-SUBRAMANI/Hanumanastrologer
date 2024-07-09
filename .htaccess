@@ -1,0 +1,6 @@
+RewriteEngine On
+ErrorDocument 404 /404.html
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{HTTP_HOST} ^(www\.)?psychicsanju\.com
+RewriteRule ^(.\*)$ https://www.psychicsanju.com/$1 [R,L]
